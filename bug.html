@@ -1,0 +1,9 @@
+This bug occurs when using Tailwind CSS's `@apply` directive with a class that contains a pseudo-class selector, such as `hover`, `focus`, or `active`.  The `@apply` directive doesn't correctly apply the styles of these pseudo-class selectors to the target element. For example:
+
+```html
+<button class="@apply hover:bg-blue-500">
+  Click me
+</button>
+```
+
+This will not change the background color of the button on hover. 
